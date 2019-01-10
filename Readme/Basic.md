@@ -3,7 +3,7 @@
 
 * [HOME](./README.md)
 
-> 본 게시글은 Java와 Kotlin을 비교하며 설명합니다.
+> 본 게시글은 Java와  Kotlin을 비교하며 설명합니다.
 
 * **Package 규칙**
   * Package 선언은 **소스파일 맨 위에** 선언 해야 함
