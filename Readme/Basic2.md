@@ -54,10 +54,12 @@
     
      <pre>
      
-      var a:Int=10
-      var b:Int=10
+      var a:Int?=10
+      var b:Int?=10
      
       print(a==b)  // true
+      
+      print(a===b) // false
      </pre>
     * **비교 연산자**는 Java와 동일합니다
     
