@@ -1,5 +1,5 @@
 fun main(args:Array<String>){
-    var obj:Any= test()
+    var obj:Any= test("aa")
     print(obj)
 
     var obj2=test2("kotlin")
@@ -16,8 +16,12 @@ fun main(args:Array<String>){
 }
 
 
-class test()
-class test2 constructor(name:String)
+class test(){
+    constructor(name:String):this(){
+     println("성공")
+    }
+}
+class test2(name:String)
 {
     init{
         println("name:$name")
