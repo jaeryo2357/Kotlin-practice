@@ -16,6 +16,8 @@
 * [Package,Return and Jumps](./Readme/RAJ.md)
 
 * [Classes](./Readme/classes.md)
+
+* [상속](./Readme/Inheritance.md)
 <hr>
 
 ## Special
