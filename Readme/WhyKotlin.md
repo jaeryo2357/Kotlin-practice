@@ -1,14 +1,14 @@
 1.Why Kotlin
 -------------
 
-* **Kotlin**Àº 2017³â 5¿ù ±¸±Û¿¡¼­ °ø½ÄÀ¸·Î ÀÎÁ¤µÈ ¾Èµå·ÎÀÌµå ¾ğ¾îÀÔ´Ï´Ù. Java¿Í °°Àº **Á¤Àû ÇÁ·Î±×·¡¹Ö ¾ğ¾î**·Î JVM, Android, Browser, Native ¾Û¿¡ »ç¿ëµÉ ¼ö ÀÖ½À´Ï´Ù.
+* **Kotlin**ì€ 2017ë…„ 5ì›” êµ¬ê¸€ì—ì„œ ê³µì‹ìœ¼ë¡œ ì¸ì •ëœ ì•ˆë“œë¡œì´ë“œ ì–¸ì–´ì…ë‹ˆë‹¤. Javaì™€ ë‹¬ë¦¬ **í•¨ìˆ˜í˜• í”„ë¡œê·¸ë˜ë°ì´ ê°€ëŠ¥**í•˜ë©° JVM, Android, Browser, Native ì•±ì— ì‚¬ìš©ë  ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 
-* **ÀåÁ¡**
+* **ì¥ì **
 
-  * **°£°á¼º**
-    * KotlinÀÇ °¡Àå Å« ÀåÁ¡Áß ÇÏ³ª·Î ÄÚµåÀÇ ¾çÀ» ´ëÆø ÁÙÀÔ´Ï´Ù.
-      * JAVA
-        <pre>
+  * **ê°„ê²°ì„±**
+    * Kotlinì˜ ê°€ì¥ í° ì¥ì ì¤‘ í•˜ë‚˜ë¡œ **ì½”ë“œì˜ ì–‘ì„ ëŒ€í­ ì¤„ì…ë‹ˆë‹¤.**
+      * **java**
+        ```java
         class data{
         String name;
         String email;
@@ -22,53 +22,76 @@
           this.name=name;
         }
         
-        ... µîµî ¸ğµç º¯¼ö¿¡ ÇØ´çÇÏ´Â Getter,Setter,equals(),hashCode(),toString(),copy() ¸¦ Á¤ÀÇÇØ¾ßÇÔ
+        ... ë“±ë“± ëª¨ë“  ë³€ìˆ˜ì— í•´ë‹¹í•˜ëŠ” Getter,Setter,equals(),hashCode(),toString(),copy() ë¥¼ ì •ì˜í•´ì•¼í•¨
         
-        </pre>
+        ```
         
-      * Kotlin
-        <pre>
-        data class Customer(val name: String, val email: String, val company: String)
-        </pre>
-  * **¾ÈÁ¤¼º**
+      * **Kotlin**
+        ```kotlin
+        data class Customer(var name: String, var email: String, var company: String)
+        ```
+  * **ì•ˆì •ì„±**
   
-    * ExceptionÀÇ ¹ß»ıÀ» **ÃÖ¼ÒÈ­**
+    * Exceptionì˜ ë°œìƒì„ **ìµœì†Œí™”**
     
-      * KotlinÀÇ **NullPointException ÃÖ¼ÒÈ­**
-        <pre>
+      * Kotlinì˜ **NullPointException ìµœì†Œí™”**
+        ```kotlin
         var output: String
-        output=null // ÄÄÆÄÀÏ ¿¡·¯ --> null °ªÀ» ³ÖÀ» ¼ö ¾ø°Ô ÄÄÆÄÀÏ ¿¡·¯¸¦ ¹ß»ı½ÃÅ´
-        </pre>
-        <pre>
+        output=null // ì»´íŒŒì¼ ì—ëŸ¬ --> null ê°’ì„ ë„£ì„ ìˆ˜ ì—†ê²Œ ì»´íŒŒì¼ ì—ëŸ¬ë¥¼ ë°œìƒì‹œí‚´
+        ```
+        
+        ```kotlin
          val name: String? =null // Nullable Type
-         println(name.lenght())  // ÄÄÆÄÀÏ ¿¡·¯ ¹ß»ı--> null °ªÀÌ¸é Á¢±ÙÀ» ¸·À½
-        </pre>
+         println(name.lenght())  // ì»´íŒŒì¼ ì—ëŸ¬ ë°œìƒ--> null ê°’ì´ë©´ ì ‘ê·¼ì„ ë§‰ìŒ
+        ```
+        
+      * Nullable Typeì¼ ê²½ìš° ê°œë°œìê°€ ì§ì ‘ ì½”ë“œì—ì„œ nullì¼ ê²½ìš°ë¥¼ ëª…ì‹œí•´ì£¼ì–´ì•¼ í•¨
+      
+        ```kotlin
+        val name: String? = null
+        println(name?.length())  // ?. ê¸°ë²•ìœ¼ë¡œ nameì´ nullì´ ì•„ë‹ˆë©´ length() ê²°ê³¼ê°’ì„ nameì´ nullì´ë©´ nullì„ ë°˜í™˜í•©ë‹ˆë‹¤.
+        ```
         
         
+        ```kotlin
+        val name: String? = null
+        println(name!!.length()) // !!ê¸°ë²•ìœ¼ë¡œ nameì´ nullì¼ìˆ˜ê°€ ì—†ë‹¤ë¼ê³  ê°œë°œìê°€ ëª…ì‹œí•´ë†“ì€ ìƒí™©ìœ¼ë¡œ ì‹¤ì œ êµ¬ë™ì‹œ nameì´ nullì´ë©´ NPEì´ ë°œìƒí•œë‹¤.
+        ```
         
-     * ÀÚµ¿À¸·Î **Casting**
+        
+     * ìë™ìœ¼ë¡œ **Casting**
      
      
         * **Java**
-          <pre>
+          ```java
            public void Func(Object obj)
            {
               if(obj instanceof Invoice)
                 ((Invoice)obj).calcualteTotal();
            }
-          </pre>
+          ```
      
      
         * **Kotlin**
-          <pre>
-          fun Func(obj : Any) // Any´Â java¿¡¼­ Object¿Í °°Àº ÃÖ»óÀ§ Å¬·¡½º
+          ```kotlin
+          fun Func(obj : Any) // AnyëŠ” javaì—ì„œ Objectì™€ ê°™ì€ ìµœìƒìœ„ í´ë˜ìŠ¤
           {
             if(obj is Invoice)
               obj.calculateTotal()
           }
-          </pre>
+          ```
           
-          **Kotlin**Àº if(obj is Invoice)¿¡¼­ obj°¡ **ÀÚµ¿À¸·Î Invoice·Î Casting µÊ**
+          ```kotlin
+          fun Func(obj : Any)
+          {
+            val temp : Invoice = obj as Invoice
+          }
+          
+          ```
+          
+        * if(obj is Invoice)ì—ì„œ isë¬¸ë²•ìœ¼ë¡œ ì‹¤ì œ objê°€ Invoiceì¼ ê²½ìš° **ìë™ìœ¼ë¡œ Invoiceë¡œ Casting ë¨**
+        
+        * as ë¬¸ë²•ì€ ê°•ì œ í˜• ë³€í™˜ìœ¼ë¡œ ë§Œì•½ objê°€ Invoiceê°€ ì•„ë‹ ê²½ìš° **Type casting Errorë¥¼ ë°œìƒ**í•œë‹¤.
          
         
 
