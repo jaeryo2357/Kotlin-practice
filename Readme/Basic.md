@@ -1,128 +1,142 @@
-2.±âº»¹®¹ı
+2.ê¸°ë³¸ë¬¸ë²•
 -------------
 
 * [HOME](./README.md)
 
-> º» °Ô½Ã±ÛÀº Java¿Í KotlinÀ» ºñ±³ÇÏ¸ç ¼³¸íÇÕ´Ï´Ù.
-* **Package ±ÔÄ¢**
-  * Package ¼±¾ğÀº **¼Ò½ºÆÄÀÏ ¸Ç À§¿¡** ¼±¾ğ ÇØ¾ß ÇÔ
+> ë³¸ ê²Œì‹œê¸€ì€ Javaì™€ Kotlinì„ ë¹„êµí•˜ë©° ì„¤ëª…í•©ë‹ˆë‹¤.
+* **Package ê·œì¹™**
+  * Package ì„ ì–¸ì€ **ì†ŒìŠ¤íŒŒì¼ ë§¨ ìœ„ì—** ì„ ì–¸ í•´ì•¼ í•¨
 
   <hr>
-  <pre>
+  
+  ```kotlin
   package hello
 
   fun main(args : Array<String>){ ... }
-  </pre>
+  ```
 
-  * **Kotlin¿¡¼­ Package¿Í ½ÇÁ¦ ¼Ò½ºÄÚµå°¡ À§Ä¡ÇÑ Directory°¡ ÀÏÄ¡ÇÒ ÇÊ¿ä°¡ ¾ø´Ù.**
+  * Kotlinì—ì„œ Packageì™€ ì‹¤ì œ ì†ŒìŠ¤ì½”ë“œê°€ ìœ„ì¹˜í•œ Directoryê°€ ì¼ì¹˜í•  í•„ìš”ê°€ ì—†ë‹¤.
 
-* **ÇÔ¼ö ¼±¾ğ**
 
-  * kotlinÀº **fun**Å°¿öµå¸¦ »ç¿ëÇÏ¿© ÇÔ¼ö¸¦ ¼±¾ğÇÏ¸ç ¹İÈ¯Å¸ÀÔÀº ¸Ç µÚ¿¡ ¿É´Ï´Ù.
+* **ì„¸ë¯¸ í´ë¡ **
+  
+  * kotlinì€ javaì™€ ë‹¬ë¦¬ ë¬¸ì¥ì˜ ì¢…ë£Œì—ì„œ **ì„¸ë¯¸í´ë¡ ì„ ì“°ì§€ ì•ŠìŠµë‹ˆë‹¤.**
+  
+  ```kotlin
+    var a:Int = 2
+  
+  ```
 
-  * ¸Å°³º¯¼ö´Â **name: type**À¸·Î Á¤ÀÇµÇ¸ç **¸Å°³º¯¼öµéÀº ,·Î ±¸ºĞµË´Ï´Ù.**
+
+* **í•¨ìˆ˜ ì„ ì–¸**
+
+  * kotlinì€ **fun**í‚¤ì›Œë“œë¥¼ ì‚¬ìš©í•˜ì—¬ í•¨ìˆ˜ë¥¼ ì„ ì–¸í•˜ë©° ë°˜í™˜íƒ€ì…ì€ ë§¨ ë’¤ì— ì˜µë‹ˆë‹¤.
+
+  * ë§¤ê°œë³€ìˆ˜ëŠ” **name: type**ìœ¼ë¡œ ì •ì˜ë˜ë©° **ë§¤ê°œë³€ìˆ˜ë“¤ì€ ,ë¡œ êµ¬ë¶„ë©ë‹ˆë‹¤.**
   * **Java**
 
-  <pre>
+  ``` java
   int sum(int a,int b){
   return a+b;
   }
-  </pre>
+  ```
 
   * **Kotlin**
 
-  <pre>
+  ``` kotlin
   fun sum(a: Int,b: Int):Int{
   return a+b
   }
-  </pre>
+  ```
 
-  * ¹İÈ¯°ªÀÌ ¾øÀ¸¸é Java-> void , Kotlin -> **Unit**
+  * ë°˜í™˜ê°’ì´ ì—†ìœ¼ë©´ Java-> void , Kotlin -> **Unit**
    * **Java**
    <hr>
-    <pre>
+    
+    ```java
       void PrintValue(){
       System.out.print("hello");
       }
-    </pre>
+    ```
 
    * **Kotlin**
    <hr>
-    <pre>
+   
+    ```kotlin
      fun PrintValue():Unit{
       print("hello")
       }
-    </pre>
-    > UnitÀº »ı·«ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+    ```
+    > Unitì€ ìƒëµí•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.
     
-     <pre>
+     ```kotlin
      fun PrintValue(){
       print("hello")
       }
-    </pre>
- * **º¯¼ö ¼±¾ğ**
+    ```
+ * **ë³€ìˆ˜ ì„ ì–¸**
     * **val**
 
-      * val java¿¡¼­ **final**°¡ À¯»çÇÕ´Ï´Ù. (»ó¼ö)
+      * val javaì—ì„œ **final**ê°€ ìœ ì‚¬í•©ë‹ˆë‹¤. (ìƒìˆ˜)
 
       * **Kotlin**
 
-      <pre>
-      val a:int=2
-      val b=2  // ´ëÀÔ °ªÀ¸·Î intÇüÀ» À¯Ãß
-      val c:int
-      c=3 //ÇÑ¹ø¸¸ ÃÊ±âÈ­ °¡´É
-      </pre>
+      ```kotlin
+      val a:Int=2
+      val b=2  // ëŒ€ì… ê°’ìœ¼ë¡œ intí˜•ì„ ìœ ì¶”
+      val c:Int 
+      c=3 // í•œë²ˆë§Œ ì´ˆê¸°í™” ê°€ëŠ¥
+      ```
         * **Java**
 
-        <pre>
+        ```java
         final int a=2;
-        final int a; //complie error ¹«Á¶°Ç ÃÊ±âÈ­ ÇØ¾ßÇÔ
-        </pre>
+        final int a; //complie error ë¬´ì¡°ê±´ ì´ˆê¸°í™” í•´ì•¼í•¨
+        ```
     * **var**
-      * varÀº ÀÚ¹ÙÀÇ ÀÏ¹İº¯¼ö¿Í °°½À´Ï´Ù.
-      <pre>
+      * varì€ ìë°”ì˜ ì¼ë°˜ë³€ìˆ˜ì™€ ê°™ìŠµë‹ˆë‹¤.
+      ```kotlin
       var x=2
-      </pre>
-  * **ÁÖ¼®**
+      ```
+  * **ì£¼ì„**
     * Kotlin
-      * Kotlin¿¡¼­ÀÇ ÁÖ¼®Àº Java¿Í À¯»çÇÕ´Ï´Ù. 
-      <pre>
-       //            ÇÑ ÁÙ ÁÖ¼®
+      * Kotlinì—ì„œì˜ ì£¼ì„ì€ Javaì™€ ìœ ì‚¬í•©ë‹ˆë‹¤. 
+      ```kotlin
+       //            í•œ ì¤„ ì£¼ì„
 
-       /*   */       ºí·° ÁÖ¼Ò
+       /*   */       ë¸”ëŸ­ ì£¼ì†Œ
        
        /*
         /*
-                      ÁßÃ¸À¸·Î ÁÖ¼® ³ÖÀ» ¼ö ÀÖ´Ù.        
+                      ì¤‘ì²©ìœ¼ë¡œ ì£¼ì„ ë„£ì„ ìˆ˜ ìˆë‹¤.        
         */
         */
-      </pre>
+      ```
       
-   * **¹®ÀÚ¿­**
+   * **ë¬¸ìì—´**
      * Java
-     <pre>
+     ```java
       int a=2;
       String s=" string test "+a+" is good";
-     </pre>
+     ```
 
      * Kotlin
-     <pre>
+     ```kotlin
      var a=2
-     val s=" string test $a is good"  //$ Ç¥½Ã·Î value ´ëÀÔ°¡´É
+     val s=" string test $a is good"  //$ í‘œì‹œë¡œ value ëŒ€ì…ê°€ëŠ¥
 
-     var s2="string ${s.replace("is","was")},but now is &a" // ÇÔ¼öÈ£Ãâ ºÎºĞµµ {}»çÀÌ¿¡ ´ëÀÔ°¡´É
-     </pre>
+     var s2="string ${s.replace("is","was")},but now is &a" // í•¨ìˆ˜í˜¸ì¶œ ë¶€ë¶„ë„ {}ì‚¬ì´ì— ëŒ€ì…ê°€ëŠ¥
+     ```
 
-   * **ÇÔ¼öÀÇ »ı·«**
-     * ÇÔ¼öÀÇ ³»¿ëÀÌ ÇÑ ¹®ÀåÀ¸·Î ³¡³ª´Â °æ¿ì, »ı·«À» ÇÒ¼ö ÀÖ´Ù.
+   * **í•¨ìˆ˜ì˜ ìƒëµ**
+     * í•¨ìˆ˜ì˜ ë‚´ìš©ì´ í•œ ë¬¸ì¥ìœ¼ë¡œ ëë‚˜ëŠ” ê²½ìš°, ìƒëµì„ í• ìˆ˜ ìˆë‹¤.
 
-     <pre>
+     ```kotlin
      fun sum(a:Int,b: Int):Int{
        return a+b
        }
-     </pre>
+     ```
 
-     <pre>
+     ```kotlin
      fun sum(a:Int,b: Int)=a+b
-     </pre>
+     ```
