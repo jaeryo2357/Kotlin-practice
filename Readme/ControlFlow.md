@@ -50,7 +50,7 @@
    
 <hr>
 
-## When
+## 인자를 가진 When
 
  ``` kotlin
 
@@ -59,6 +59,8 @@
  20 -> print(x)
 
  30 -> print(x+2)
+ 
+ 10,0 -> print(x+3)
 
  else -> print(1)
  }
@@ -112,6 +114,24 @@
  ```
  <hr>
  
+ 
+## 인자가 없는 When
+
+ * 인자가 없는 when은 java의 else if 문의 복잡성을 줄여주는 데 좋습니다.
+ 
+ ```kotlin
+ 
+  when {
+    
+    x in 1..10  -> {     }
+    x in 2.. 5 -> {   }
+  }
+ ```
+* 위에서 부터 차례대로 조건을 검사하여 **true**일때 해당 본문을 실행한다.
+
+
+
+
 ## for
   
  ```kotlin
