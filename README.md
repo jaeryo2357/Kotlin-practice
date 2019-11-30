@@ -11,7 +11,7 @@
 
 * [기본 자료형](./Readme/Basic2.md)
 
-* [함수와 함수형 프로그래밍](./
+* [함수와 함수형 프로그래밍](./Readme/functions.md)
 
 * [흐름 제어](./Readme/ControlFlow.md)
       
