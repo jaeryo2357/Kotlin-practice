@@ -75,7 +75,17 @@
    print(a.toInt()) //출력 65   숫자로 변환 시킬 수 있습니다.
    print(a+1) //출력 b
    ```
-   
+* **조건 자료형**
+
+|  <center>자료형</center> |  <center>비트</center> | 
+|:--------|:--------:|
+|**Boolean** | <center>1 </center>|
+  
+  ```kotlin
+    val a: Boolean = true
+    val b = false // Boolean으로 추론
+  ```
+  
   
  * Kotlin에서는 명시적인 변환으로 형에 맞게 대입해주어야 합니다.
     ```java
