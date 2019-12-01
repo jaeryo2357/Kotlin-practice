@@ -30,6 +30,17 @@
         ```kotlin
         data class Customer(var name: String, var email: String, var company: String)
         ```
+        
+     * 자료형 추론으로 변수 선언이 간편하다.
+     
+     ```java
+     CameraDevice.OnStateCallbackListener callback = new CameraDevice.OnStateCallbackListener{ ... }
+     ```
+     
+     
+     ```kotlin
+     val callback = new CameraDevice.OnStateCallbackListener{ ... }
+     ```
   * **안정성**
   
     * Exception의 발생을 **최소화**
