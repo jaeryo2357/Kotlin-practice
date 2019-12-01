@@ -41,7 +41,7 @@
        * **kotlin**
      
         ```kotlin
-        val callback = new CameraDevice.OnStateCallbackListener{ ... }
+        val callback = object: CameraDevice.OnStateCallbackListener{ ... }
         ```
   * **안정성**
   
