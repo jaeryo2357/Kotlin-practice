@@ -13,7 +13,7 @@ fun main() {
     Thread.sleep(2000L)
     println("job.isActive: ${job.isActive}, completed: ${job.isCompleted}")
 
-    worksInSerial()
+   // worksInSerial()
     worksInParallel()
     readLine()
 }
@@ -47,13 +47,16 @@ private fun worksInParallel() {
         doWork1()
     }
 
+    //현재 async가 실행됨
     val two = GlobalScope.async {
+        println("two start")
         doWork2()
     }
 
     GlobalScope.launch {
+        println("awit start")
         val combined = one.await() + "_" + two.await()
-        //await 결과 값이 나올 때까지 대기
+        //await 결과 값이 나올 때까지 대기하지만 launch 안에서 대기한다는 뜻
         println("delay")
         println("Kotlin Combined : $combined")
     }

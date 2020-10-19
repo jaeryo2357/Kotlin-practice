@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14ccbc6e-90b6-4d0e-b472-4bbbcbd73e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_jetbrains_kotlinx_kotlinx_coroutines_android_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chap11/BasicCoroutines.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chap11/CoroutinesReturn.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chap11/ThreadTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chap11/RunBlockingTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doit_kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Doit_kotlin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/META-INF/Doit_kotlin.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/META-INF/Doit_kotlin.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/chap03/section2/HighOrderTestKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/chap03/section2/HighOrderTestKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$main$job$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$main$job$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$worksInParallel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$worksInParallel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$worksInParallel$two$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$worksInParallel$two$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$worksInSerial$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt$worksInSerial$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Doit_kotlin/chap11/CoroutinesReturnKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chap11/CoroutinesReturn.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/chap11/CoroutinesReturn.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,11 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chap11/CoroutinesReturn.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="931">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/chap11/RunBlockingTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -110,6 +120,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -131,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/chap11/ThreadTest.kt" />
         <option value="$PROJECT_DIR$/src/chap11/BasicCoroutines.kt" />
         <option value="$PROJECT_DIR$/src/chap11/CoroutinesReturn.kt" />
+        <option value="$PROJECT_DIR$/src/chap11/RunBlockingTest.kt" />
       </list>
     </option>
   </component>
@@ -146,7 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,7 +181,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,7 +189,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603018103189" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603116141752" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -200,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.chap11.CoroutinesReturnKt">
+  <component name="RunManager" selected="Kotlin.chap11.RunBlockingTestKt">
     <configuration name="chap03.section2.FuncArgumentKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Doit_kotlin" />
       <option name="VM_PARAMETERS" />
@@ -240,7 +252,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chap11.CoroutinesReturnKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="chap11.CoroutinesReturnKt" type="JetRunConfigurationType" factoryName="Kotlin" nameIsGenerated="true">
       <module name="Doit_kotlin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -248,6 +260,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="chap11.CoroutinesReturnKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chap11.RunBlockingTestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Doit_kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chap11.RunBlockingTestKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -268,7 +293,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.chap11.CoroutinesReturnKt" />
+        <item itemvalue="Kotlin.chap11.RunBlockingTestKt" />
         <item itemvalue="Kotlin.chap11.BasicCoroutinesKt" />
         <item itemvalue="Kotlin.chap11.ThreadTestKt" />
         <item itemvalue="Kotlin.chap03.section2.HighOrderTestKt" />
@@ -289,11 +314,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25838926" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -302,12 +336,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32765958" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16737589" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
@@ -390,8 +424,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chap11/CoroutinesReturn.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="931">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chap11/RunBlockingTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
